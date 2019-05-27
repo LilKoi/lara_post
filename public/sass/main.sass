@@ -1,0 +1,179 @@
+@import '_medias' 
+@font-face 
+    font-family: PlayfairDisplay
+    src: url('/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf')
+@font-face 
+    font-family: Ubuntu
+    src: url('/fonts/Ubuntu/Ubuntu-Light.ttf')    
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+.wrapper-auth,
+.wrapper-reg
+    position: absolute
+    top: -100%
+    transition: 0.5s
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #fff
+    .close-auth,
+    .close-reg
+        position: absolute
+        top: 30px
+        right: 30px
+        border: none
+        background-color: transparent
+        outline: none
+        i
+            font-size: 28px
+    form 
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column 
+        input
+            margin-bottom: 30px
+            width: 60%
+            border: 1px solid #cccccc
+            background-color: transparent   
+            padding-top: 15px
+            padding-bottom: 15px
+            padding-left: 15px
+            outline: none
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 140px
+    .logo
+        width: 40%
+        .logo__text
+            font-family: PlayfairDisplay
+            font-weight: bold
+            font-size: 20px
+            text-decoration: none
+            outline: none
+            color: #000000
+    .wrapper-menu
+        width: 60%
+        .menu
+            display: flex
+            justify-content: space-between
+            list-style: none
+            width: 100%
+            margin: 0
+            .menu__menu-item
+                font-family: PlayfairDisplay
+                font-size: 14px
+                a 
+                    text-decoration: none
+                    color: #000000
+                    outline: none
+.main
+    .author,
+    .author a
+        font-family: Ubuntu
+        color: #CBC2B7
+        text-align: left
+        font-size: 16px
+        font-style: italic
+        background-color: transparent
+        border: none
+        outline: none
+        text-decoration: none
+    .main-image
+        text-align: center
+        margin-bottom: 100px
+        .main-image__image
+            width: 100%
+    .news
+        h1
+            font-family: PlayfairDisplay 
+            color: #626262
+            font-size: 32px
+            margin-top: 20px
+            margin-bottom: 30px
+        span,
+        button 
+            font-family: Ubuntu
+            color: #CBC2B7
+            font-size: 16px
+            background-color: transparent
+            border: none;
+            outline: none
+        p
+            font-family: PlayfairDisplay 
+            font-size: 15px
+            line-height: 1.7
+            color: #626262
+    
+        .wrapper-news 
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            width: 100%
+            .news
+                width: 47%
+                display: flex
+                flex-direction: column 
+                margin-top: 120px  
+                .news__image
+                    margin-bottom: 35px
+                    width: 100%
+    .wrapper-email-sends
+        display: flex
+        width: 100%
+        text-align: center
+        justify-content: center
+        padding-top: 70px
+        padding-bottom: 70px
+        margin-top: 90px
+        background-color: #F0F0F0
+        font-family: PlayfairDisplay 
+        color: #626262       
+        font-weight: bold     
+        input
+            border: none
+            border-bottom: 1px solid #000000
+            background-color: transparent
+            width: 43%
+            margin-top: 60px
+            outline: none;
+            padding-bottom: 15px
+    .wrapper-load-more
+        width: 100%;
+        display: flex
+        justify-content: center
+        padding-top: 160px
+        padding-bottom: 160px
+        font-family: PlayfairDisplay 
+        input
+            background-color: transparent
+            border: 1px solid #626262
+            width: 165px
+            height: 60px
+.footer
+    width: 100%
+    background-color: #F0F0F0
+    padding-top: 30px
+    padding-bottom: 30px
+    .container
+        display: flex
+        justify-content: space-between
+        .wrapper-footer-left-menu,
+        .wrapper-footer-right-menu
+            .menu
+                list-style: none
+                font-family: PlayfairDisplay 
+                display: flex
+                margin: 0
+                .menu__menu-item
+                    margin-right: 20px
+                    color: #626262
+        .wrapper-footer-left-menu
+

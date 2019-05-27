@@ -1,0 +1,498 @@
+@media screen and (max-width: 992px) {
+    .main .wrapper-like-news .like-news .like-news__news {
+        width: 48% !important;
+        margin-top: 30px;
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main .news .wrapper-news {
+        flex-direction: column;
+    }
+
+    .main .news .wrapper-news .news {
+        width: 100% !important;
+    }
+
+    .main .wrapper-like-news .like-news .like-news__news {
+        width: 100% !important;
+        margin-top: 60px;
+        margin-right: 0 !important;
+    }
+
+    .main .wrapper-like-news .like-news .like-news__news:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    .main .wrapper-profile {
+        flex-direction: column;
+        justify-content: center !important;
+    }
+
+    .main .wrapper-profile .info {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main .wrapper-profile .info .info__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .wrapper-profile .info .info__content .name {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .main .wrapper-profile .info .info__content .online,
+        .main .wrapper-profile .info .info__content .offline {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        margin-bottom: 60px;
+    }
+
+    .main .wrapper-profile .change {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main .wrapper-profile .change form {
+        width: 100%;
+    }
+
+    .main .wrapper-profile .change form button {
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: Ubuntu;
+  src: url("/fonts/Ubuntu/Ubuntu-Light.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper-auth,
+.wrapper-reg {
+    position: absolute;
+    top: -100%;
+    transition: 0.5s;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.wrapper-auth .close-auth,
+  .wrapper-auth .close-reg,
+  .wrapper-reg .close-auth,
+  .wrapper-reg .close-reg {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.wrapper-auth .close-auth i,
+    .wrapper-auth .close-reg i,
+    .wrapper-reg .close-auth i,
+    .wrapper-reg .close-reg i {
+    font-size: 28px;
+}
+
+.wrapper-auth form,
+  .wrapper-reg form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper-auth form input,
+    .wrapper-reg form input {
+    margin-bottom: 30px;
+    width: 60%;
+    border: 1px solid #cccccc;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+}
+
+.header .logo {
+    width: 40%;
+}
+
+.header .logo .logo__text {
+    font-family: PlayfairDisplay;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+}
+
+.header .wrapper-menu {
+    width: 60%;
+}
+
+.header .wrapper-menu .menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+
+.header .wrapper-menu .menu .menu__menu-item {
+    font-family: PlayfairDisplay;
+    font-size: 14px;
+}
+
+.header .wrapper-menu .menu .menu__menu-item a {
+    text-decoration: none;
+    color: #000000;
+    outline: none;
+}
+
+.main .author,
+.main .author a {
+    font-family: Ubuntu;
+    color: #CBC2B7;
+    text-align: left;
+    font-size: 16px;
+    font-style: italic;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.main .main-image {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.main .main-image .main-image__image {
+    width: 100%;
+}
+
+.main .news h1 {
+    font-family: PlayfairDisplay;
+    color: #626262;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main .news span,
+.main .news button {
+    font-family: Ubuntu;
+    color: #CBC2B7;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.main .news p {
+    font-family: PlayfairDisplay;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #626262;
+}
+
+.main .news .wrapper-news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main .news .wrapper-news .news {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.main .news .wrapper-news .news .news__image {
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.main .wrapper-email-sends {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 90px;
+    background-color: #F0F0F0;
+    font-family: PlayfairDisplay;
+    color: #626262;
+    font-weight: bold;
+}
+
+.main .wrapper-email-sends input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    width: 43%;
+    margin-top: 60px;
+    outline: none;
+    padding-bottom: 15px;
+}
+
+.main .wrapper-load-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    font-family: PlayfairDisplay;
+}
+
+.main .wrapper-load-more input {
+    background-color: transparent;
+    border: 1px solid #626262;
+    width: 165px;
+    height: 60px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #F0F0F0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .wrapper-footer-left-menu .menu,
+    .footer .container .wrapper-footer-right-menu .menu {
+    list-style: none;
+    font-family: PlayfairDisplay;
+    display: flex;
+    margin: 0;
+}
+
+.footer .container .wrapper-footer-left-menu .menu .menu__menu-item,
+      .footer .container .wrapper-footer-right-menu .menu .menu__menu-item {
+    margin-right: 20px;
+    color: #626262;
+}
+
+@media screen and (max-width: 992px) {
+    .main .wrapper-like-news .like-news .like-news__news {
+        width: 48% !important;
+        margin-top: 30px;
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main .news .wrapper-news {
+        flex-direction: column;
+    }
+
+    .main .news .wrapper-news .news {
+        width: 100% !important;
+    }
+
+    .main .wrapper-like-news .like-news .like-news__news {
+        width: 100% !important;
+        margin-top: 60px;
+        margin-right: 0 !important;
+    }
+
+    .main .wrapper-like-news .like-news .like-news__news:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    .main .wrapper-profile {
+        flex-direction: column;
+        justify-content: center !important;
+    }
+
+    .main .wrapper-profile .info {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main .wrapper-profile .info .info__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .wrapper-profile .info .info__content .name {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .main .wrapper-profile .info .info__content .online,
+        .main .wrapper-profile .info .info__content .offline {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        margin-bottom: 60px;
+    }
+
+    .main .wrapper-profile .change {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main .wrapper-profile .change form {
+        width: 100%;
+    }
+
+    .main .wrapper-profile .change form button {
+        width: 100%;
+    }
+}
+
+.main .wrapper-like-news {
+    background-color: #F5F5F5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main .wrapper-like-news span {
+    font-family: Ubuntu;
+    color: #CBC2B7;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.main .wrapper-like-news .like-news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 45px;
+}
+
+.main .wrapper-like-news .like-news .like-news__news {
+    width: 30%;
+}
+
+.main .wrapper-like-news .like-news .like-news__news .title {
+    font-family: PlayfairDisplay;
+    color: #626262;
+    font-size: 26px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.main .wrapper-like-news .like-news .like-news__news img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.main .wrapper-comments {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main .wrapper-comments .count {
+    font-family: Ubuntu;
+    color: #CBC2B7;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.main .wrapper-comments .comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .wrapper-comments .comments .comments__comment {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.main .wrapper-comments .comments .comments__comment .img {
+    margin-right: 30px;
+    width: 72px;
+    height: 72px;
+}
+
+.main .wrapper-comments .comments .comments__comment .img img {
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+}
+
+.main .wrapper-comments .comments .comments__comment .wrapper-content .name {
+    font-family: PlayfairDisplay;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.main .wrapper-comments .comments .comments__comment .wrapper-content p {
+    margin-bottom: 0;
+    font-family: PlayfairDisplay;
+}
+
+.main .wrapper-comments .comments .comments__comment .wrapper-content .reply {
+    font-family: Ubuntu;
+    color: #CBC2B7;
+    font-size: 16px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.main .wrapper-comments .comments .make-comment .wrapper-content {
+    width: 100%;
+}
+
+.main .wrapper-comments .comments .make-comment .wrapper-content input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding-left: 60px;
+}

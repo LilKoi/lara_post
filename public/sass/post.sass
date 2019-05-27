@@ -1,0 +1,84 @@
+@import 'main'
+@import '_medias'
+.main
+    .wrapper-like-news
+        background-color: #F5F5F5
+        padding-top: 60px
+        padding-bottom: 60px
+        span
+            font-family: Ubuntu
+            color: #CBC2B7
+            font-size: 16px
+            background-color: transparent
+            border: none
+            outline: none
+        .like-news
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            width: 100%
+            padding-top: 45px
+            .like-news__news
+                width: 30%
+                .title
+                    font-family: PlayfairDisplay 
+                    color: #626262
+                    font-size: 26px
+                    margin-top: 20px
+                    text-decoration: none
+                img
+                    width: 100%
+                    height: 250px
+                    object-fit: cover
+    .wrapper-comments
+        padding-top: 60px
+        padding-bottom: 60px
+        .count
+            font-family: Ubuntu
+            color: #CBC2B7
+            font-size: 16px
+            background-color: transparent
+            border: none
+            outline: none
+        .comments
+            display: flex
+            flex-direction: column
+            .comments__comment
+                display: flex
+                width: 100%
+                margin-top: 30px
+                .img
+                    margin-right: 30px
+                    width: 72px
+                    height: 72px
+                    img
+                        border-radius: 50%
+                        width:  inherit
+                        height: inherit
+                .wrapper-content
+                    .name
+                        font-family: PlayfairDisplay 
+                        font-weight: bold
+                        display: block
+                        margin-bottom: 15px
+                    p
+                        margin-bottom: 0
+                        font-family: PlayfairDisplay 
+                    .reply
+                        font-family: Ubuntu
+                        color: #CBC2B7
+                        font-size: 16px
+                        margin-top: 30px
+                        background-color: transparent
+                        border: none
+                        outline: none
+            .make-comment
+                .wrapper-content
+                    width: 100%
+                    input
+                        width: 100%
+                        height: 100%
+                        outline: none
+                        border-radius: 5px
+                        border: 1px solid #cccccc
+                        padding-left: 60px
