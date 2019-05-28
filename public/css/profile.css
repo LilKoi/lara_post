@@ -126,7 +126,7 @@
 }
 
 .wrapper-auth form input,
-    .wrapper-reg form input {
+.wrapper-reg form input {
     margin-bottom: 30px;
     width: 60%;
     border: 1px solid #cccccc;
@@ -422,4 +422,36 @@
     font-size: 15px;
     line-height: 1.7;
     color: #626262;
+}
+.main .wrapper-form-create-post form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.main .wrapper-form-create-post  h3 {
+    font-family: Ubuntu;
+    color: #626262;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.main .wrapper-form-create-post form input::placeholder,
+.main .wrapper-form-create-post form textarea::placeholder
+{
+    color: #cccccc;
+}
+.main .wrapper-form-create-post form input,
+.main .wrapper-form-create-post form textarea {
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    outline: none;
+    font-family: Ubuntu;
 }

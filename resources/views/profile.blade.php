@@ -109,6 +109,15 @@
                </div>    
             </div>
         </div>
+        <div class="wrapper-form-create-post">
+            <h3>Создать пост</h3>
+            <form action="{{ action('PostController@post') }}" method="post">
+                {{ csrf_field() }}
+                <input type="text" name="name" placeholder="Имя поста">
+                <textarea name="description" id="" cols="30" rows="10" placeholder="Текст"></textarea>
+                <input type="submit" value="Создать пост">
+            </form>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">

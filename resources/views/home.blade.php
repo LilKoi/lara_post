@@ -60,18 +60,7 @@
                 </button>
             </div>
             <div class="wrapper-news">
-                <div class="news">
-                    <img class="news__image" src="./img/image1.png" alt="">
-                    <span class="news__category">LIFESTYLE</span>
-                    <h1 class="news__title">More than just a music festival </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
-                </div>
-                <div class="news">
-                    <img class="news__image" src="./img/image1.png" alt="">
-                    <span class="news__category">LIFESTYLE</span>
-                    <h1 class="news__title">More than just a music festival </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
-                </div>
+
                 <div class="news">
                     <img class="news__image" src="./img/image1.png" alt="">
                     <span class="news__category">LIFESTYLE</span>
