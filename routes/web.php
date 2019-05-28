@@ -13,8 +13,8 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/post', 'PostController@index');
+Route::get('/post', 'PostController@index')->name('conclusion_post');
 
 Route::get('/profile','ProfileController@index')->name('profile');
 
-Route::post('profile', 'PostController@post');
+Route::post('/profile', 'PostController@post')->name('post');

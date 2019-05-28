@@ -8,17 +8,23 @@ use App\Post;
 class PostController extends Controller
 {
     public function index(){
-        return view('post');
+        $posts = Post::all();
+        return view('home' ,
+            ['posts' => $posts]);
     }
     
     public function post(Request $Request){
             Post::create([
-                'name'        =>  $Request ['name'],
-                'description' =>  $Request ['description'],
-                'img'         =>  false,
-                'author'      =>  false,
-                 'category'    =>  false
+                'name'        =>  $Request['name'],
+                'description' =>  $Request['description'],
+                'img'         =>  '1',
+                'author'      =>  '1',
+                'category'    =>  '1'
             ]);
             return redirect()-> route( 'profile');
+    }
+
+    public function all_post(){
+
     }
 }
