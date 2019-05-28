@@ -20,7 +20,7 @@ class CreatePostTable extends Migration
             $table->string('img');
             $table->timestamps();
             $table->string('author');
-            $table->string('category');
+                $table->string('category');
         });
     }
 

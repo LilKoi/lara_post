@@ -15,6 +15,6 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/post', 'PostController@index');
 
-Route::get('/profile','ProfileController@index');
+Route::get('/profile','ProfileController@index')->name('profile');
 
 Route::post('profile', 'PostController@post');

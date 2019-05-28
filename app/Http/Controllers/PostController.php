@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use Illuminate\Http\Request;
 use App\Post;
 
 class PostController extends Controller
@@ -11,10 +11,10 @@ class PostController extends Controller
         return view('post');
     }
     
-    public function post($data){
+    public function post(Request $Request){
             Post::create([
-                'name'        =>  $data['name'],
-                'description' =>  $data['description'],
+                'name'        =>  $Request ['name'],
+                'description' =>  $Request ['description'],
                 'img'         =>  false,
                 'author'      =>  false,
                  'category'    =>  false
